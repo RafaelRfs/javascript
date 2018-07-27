@@ -1,22 +1,20 @@
-function formataDinheiro(valorxy){
+function formataMoney(valorxy){
 		var valorxy =  valorxy.val().split(',');
 			valorxy = valorxy[0] !== undefined ? valorxy[0]  : 0;
 			valorxy = valorxy.replace(/[^\d]+/gi,'') ;
-			valorxy = adicionarPonto(valorxy);
+			valorxy = addPoint(valorxy);
 			valorxy += ',00';
 		return valorxy;
 	}
 
-function adicionarPonto(campo) {
-    if(!campo)
-    	return campo      
-    var nvalue = Number(RemoverPonto(campo)).toLocaleString('pt-BR')
+function addPoint(camp) {
+    if(!camp)
+    	return camp     
+    var nvalue = Number(RemovePoint(camp)).toLocaleString('pt-BR');
     return nvalue;
    }
-	
-	
-	function RemoverPonto(campo)
-	{	
-		campo = campo.split(".").join("");
-		return campo;
+
+function RemovePoint(camp){	
+		campo = camp.split(".").join("");
+		return camp;
 	}
