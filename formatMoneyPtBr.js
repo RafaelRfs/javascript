@@ -1,4 +1,4 @@
-function formatMoney(valorxy){
+function formatMoneyPtBr(valorxy){
 		var valorxy =  valorxy.val().split(',');
 			valorxy = valorxy[0] !== undefined ? valorxy[0]  : 0;
 			valorxy = valorxy.replace(/[^\d]+/gi,'') ;
