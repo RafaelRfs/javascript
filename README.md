@@ -1,5 +1,5 @@
 # javascript
-Javascript Functions and Programs
+//Javascript Functions and Programs
 <br>
 <script type='text/javascript' src='formatMoneyPtBr.js'></script>
 
